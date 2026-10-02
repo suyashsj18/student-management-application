@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f3f5f1; color: #20362e; font-family: Arial, sans-serif; }
+button, input, select { font: inherit; }
+button { min-height: 36px; padding: 8px 12px; border: 1px solid #ccd6ce; border-radius: 4px; background: white; color: #294b3c; cursor: pointer; }
+button:hover { background: #edf3ed; }
+.page { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0 24px; }
+.heading { margin-bottom: 25px; }
+.eyebrow { margin: 0 0 8px; color: #718274; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 40px); }
+.heading > p:last-child { color: #69776d; }
+.panel { margin-bottom: 18px; padding: 20px; background: white; border: 1px solid #dbe2dc; border-radius: 5px; }
+h2 { margin: 0 0 16px; font-size: 18px; }
+.student-form { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: end; }
+.student-form label { display: grid; gap: 6px; color: #536257; font-size: 12px; font-weight: 700; }
+.student-form input, .student-form select { width: 100%; height: 39px; padding: 8px; border: 1px solid #cfd8d1; border-radius: 4px; background: #fff; color: #243a30; }
+.form-actions { display: flex; gap: 8px; }
+.primary { color: white; background: #285746; border-color: #285746; }
+.primary:hover { background: #1f4638; }
+.error { padding: 12px; color: #8c3027; background: #fff0ec; border: 1px solid #ebc4bc; border-radius: 4px; }
+.error button { margin-left: 8px; }
+.list-heading { display: flex; justify-content: space-between; align-items: center; }
+.list-heading h2 { margin: 0; }
+.list-heading span { color: #748177; font-size: 12px; }
+.empty { margin: 20px 0 4px; color: #748177; font-size: 14px; }
+.table-scroll { overflow-x: auto; margin-top: 14px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 11px 9px; border-bottom: 1px solid #e7ece7; font-size: 13px; }
+th { color: #718075; background: #f7f9f6; font-size: 11px; }
+.actions { white-space: nowrap; }
+.actions button { min-height: 30px; margin-right: 6px; padding: 5px 9px; font-size: 12px; }
+.actions .delete { color: #8c3027; }
+footer { padding: 8px 0; color: #78847b; font-size: 12px; }
+@media (max-width: 650px) { .page { padding-top: 26px; } .student-form { grid-template-columns: 1fr; } .panel { padding: 15px; } }
